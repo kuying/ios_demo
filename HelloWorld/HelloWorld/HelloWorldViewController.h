@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HelloWorldViewController : UIViewController
+@interface HelloWorldViewController : UIViewController <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *txtName;
+@property (weak, nonatomic) IBOutlet UILabel *lblHelloWorld;
+- (IBAction)doBtnHello:(id)sender;
+- (IBAction)doBtnHide:(id)sender;
 
 @end

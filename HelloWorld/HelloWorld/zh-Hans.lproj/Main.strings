@@ -1,0 +1,12 @@
+
+/* Class = "IBUITextField"; placeholder = "type your name"; ObjectID = "P2Q-as-9fF"; */
+"P2Q-as-9fF.placeholder" = "输入你的姓名";
+
+/* Class = "IBUILabel"; text = "Hello World!"; ObjectID = "pmy-Ud-xSA"; */
+"pmy-Ud-xSA.text" = "你好 世界！";
+
+/* Class = "IBUIButton"; normalTitle = "Hello"; ObjectID = "tvw-eS-RzC"; */
+"tvw-eS-RzC.normalTitle" = "你好";
+
+/* Class = "IBUIButton"; normalTitle = "Hide"; ObjectID = "wc9-9a-CIp"; */
+"wc9-9a-CIp.normalTitle" = "隐藏";

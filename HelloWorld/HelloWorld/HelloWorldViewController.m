@@ -26,4 +26,26 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)doBtnHello:(id)sender {
+    NSString *name = self.txtName.text;
+    
+    if ([name length] == 0) {
+        name = NSLocalizedString(@"WORLD", @"world localizable");
+    }
+    
+    self.lblHelloWorld.text = [[NSString alloc] initWithFormat:NSLocalizedString(@"HELLO", @"hello localizable"), name];
+}
+
+- (IBAction)doBtnHide:(id)sender {
+    [self.lblHelloWorld setHidden:![self.lblHelloWorld isHidden]];
+    [sender setTitle:[self.lblHelloWorld isHidden]? NSLocalizedString(@"SHOW", @"show localizable") : NSLocalizedString(@"HIDE", @"hide localizable") forState:UIControlStateNormal];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
+    if (theTextField == self.txtName) {
+        [theTextField resignFirstResponder];
+    }
+    return YES;
+}
+
 @end

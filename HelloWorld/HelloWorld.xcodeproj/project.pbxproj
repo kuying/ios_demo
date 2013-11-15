@@ -21,6 +21,7 @@
 		30D0407C1835F21200DEEB8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D0405E1835F21200DEEB8C /* UIKit.framework */; };
 		30D040841835F21200DEEB8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30D040821835F21200DEEB8C /* InfoPlist.strings */; };
 		30D040861835F21200DEEB8C /* HelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D040851835F21200DEEB8C /* HelloWorldTests.m */; };
+		30D0409B183609DC00DEEB8C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30D0409D183609DC00DEEB8C /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,11 @@
 		30D040811835F21200DEEB8C /* HelloWorldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloWorldTests-Info.plist"; sourceTree = "<group>"; };
 		30D040831835F21200DEEB8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		30D040851835F21200DEEB8C /* HelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldTests.m; sourceTree = "<group>"; };
+		30D0408F1836069800DEEB8C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		30D040901836069800DEEB8C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		30D040911836069800DEEB8C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		30D0409C183609DC00DEEB8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		30D0409E183609E100DEEB8C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 				30D040631835F21200DEEB8C /* InfoPlist.strings */,
 				30D040661835F21200DEEB8C /* main.m */,
 				30D040681835F21200DEEB8C /* HelloWorld-Prefix.pch */,
+				30D0409D183609DC00DEEB8C /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -212,6 +219,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 30D0404E1835F21200DEEB8C;
 			productRefGroup = 30D040581835F21200DEEB8C /* Products */;
@@ -230,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30D040731835F21200DEEB8C /* Images.xcassets in Resources */,
+				30D0409B183609DC00DEEB8C /* Localizable.strings in Resources */,
 				30D040651835F21200DEEB8C /* InfoPlist.strings in Resources */,
 				30D0406E1835F21200DEEB8C /* Main.storyboard in Resources */,
 			);
@@ -279,6 +288,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				30D040641835F21200DEEB8C /* en */,
+				30D040901836069800DEEB8C /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -287,6 +297,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				30D0406D1835F21200DEEB8C /* Base */,
+				30D0408F1836069800DEEB8C /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -295,8 +306,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				30D040831835F21200DEEB8C /* en */,
+				30D040911836069800DEEB8C /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		30D0409D183609DC00DEEB8C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30D0409C183609DC00DEEB8C /* Base */,
+				30D0409E183609E100DEEB8C /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -461,6 +482,7 @@
 				30D0408B1835F21200DEEB8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30D0408C1835F21200DEEB8C /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +491,7 @@
 				30D0408E1835F21200DEEB8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
