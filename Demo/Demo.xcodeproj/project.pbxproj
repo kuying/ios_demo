@@ -21,6 +21,8 @@
 		307229BB183CB6C500AF73E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072299D183CB6C500AF73E5 /* UIKit.framework */; };
 		307229C3183CB6C500AF73E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 307229C1183CB6C500AF73E5 /* InfoPlist.strings */; };
 		307229C5183CB6C500AF73E5 /* demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 307229C4183CB6C500AF73E5 /* demoTests.m */; };
+		3099ACC21845DAD800D65231 /* DemoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3099ACC01845DAD800D65231 /* DemoModel.xcdatamodeld */; };
+		3099ACC51845DB1E00D65231 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3099ACC41845DB1E00D65231 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		307229C0183CB6C500AF73E5 /* demoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "demoTests-Info.plist"; sourceTree = "<group>"; };
 		307229C2183CB6C500AF73E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		307229C4183CB6C500AF73E5 /* demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demoTests.m; sourceTree = "<group>"; };
+		3099ACC11845DAD800D65231 /* DemoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DemoModel.xcdatamodel; sourceTree = "<group>"; };
+		3099ACC31845DB1E00D65231 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		3099ACC41845DB1E00D65231 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +124,9 @@
 				307229AF183CB6C500AF73E5 /* DemoViewController.m */,
 				307229B1183CB6C500AF73E5 /* Images.xcassets */,
 				307229A0183CB6C500AF73E5 /* Supporting Files */,
+				3099ACC01845DAD800D65231 /* DemoModel.xcdatamodeld */,
+				3099ACC31845DB1E00D65231 /* Person.h */,
+				3099ACC41845DB1E00D65231 /* Person.m */,
 			);
 			path = demo;
 			sourceTree = "<group>";
@@ -253,7 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3099ACC21845DAD800D65231 /* DemoModel.xcdatamodeld in Sources */,
 				307229B0183CB6C500AF73E5 /* DemoViewController.m in Sources */,
+				3099ACC51845DB1E00D65231 /* Person.m in Sources */,
 				307229A6183CB6C500AF73E5 /* main.m in Sources */,
 				307229AA183CB6C500AF73E5 /* DemoAppDelegate.m in Sources */,
 			);
@@ -470,6 +480,7 @@
 				307229CA183CB6C500AF73E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		307229CB183CB6C500AF73E5 /* Build configuration list for PBXNativeTarget "demoTests" */ = {
 			isa = XCConfigurationList;
@@ -478,8 +489,22 @@
 				307229CD183CB6C500AF73E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3099ACC01845DAD800D65231 /* DemoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3099ACC11845DAD800D65231 /* DemoModel.xcdatamodel */,
+			);
+			currentVersion = 3099ACC11845DAD800D65231 /* DemoModel.xcdatamodel */;
+			path = DemoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3072298E183CB6C500AF73E5 /* Project object */;
 }
